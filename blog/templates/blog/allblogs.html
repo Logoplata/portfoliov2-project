@@ -36,7 +36,7 @@ Page 5: Clients/Contact
 <!--- Navigation -->
 <nav class="navbar navbar-expand-md fixed-top">
 <div class="container-fluid">
-	<a class="navbar-brand" href="index.html"><img src="img/nuno.png" alt=""></a>
+	<a class="navbar-brand" href="index.html"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
 	</button>
@@ -44,7 +44,7 @@ Page 5: Clients/Contact
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-				<a class="nav-link active" href="#home">Home</a>
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -59,7 +59,7 @@ Page 5: Clients/Contact
 				<a class="nav-link" href="#contact">Contact Me</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#contact">Blog</a>
+				<a class="nav-link active" href="{% url 'allblogs' %}">Blog</a>
 			</li>
 		</ul>
 	</div>
@@ -99,16 +99,23 @@ Page 5: Clients/Contact
 
 
 <!--- Start Portfolio grid -->
-<div class="row">
+<main role="main">
+	<div class="container">
 
-<div class="os-animation" data-animation="fadeInUp">
-<div class="narrow text-center">
-	<div class="col-12">
-		<p class="lead">Get in contact with me to see more of my great design work in addition to web development</p>
-		<a class="btn btn-secondary btn-sm" href="contact.html">Get In Touch</a>
-	</div>
-</div>
-</div>
+	<h1 class="text-center pt-3">Welcome to the Blog</h1>
+	<br />
+	<br />
+	<h2>Latest Posts</h2>
+	<hr />
+
+	{% for blog in blogs.all %}
+	<a href="#"><h3>{{ blog.title }}</h3></a>
+	{{ blog.pub_date_pretty }}
+	<br />
+	<img class="img-fluid" src="{{ blog.image.url }}" height=200 width=200/>
+	<br />
+	<p>{{ blog.summary }}</p>
+	{% endfor %}
 
 </div>
 <!--- End of Portfolio Section -->
