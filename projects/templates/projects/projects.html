@@ -17,17 +17,6 @@
 	<link rel="stylesheet" href="{% static 'css/waypoints.css' %}">
 </head>
 
-<!---
-5 Page Outline Per Original Theme Sections:
-Page 1: Home/Features
-Page 2: Portfolio
-Page 3: Pricing
-Page 4: Team/Skills
-Page 5: Clients/Contact
--links to different pages
--Scrollspy removed for active nav links
--->
-
 <body>
 
 <!--- Start Home section -->
@@ -44,10 +33,10 @@ Page 5: Clients/Contact
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-				<a class="nav-link active" href="#home">Home</a>
+				<a class="nav-link" href="#home">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Portfolio</a>
+				<a class="nav-link active" href="#home">Portfolio</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="https://github.com/Logoplata">Github</a>
@@ -80,15 +69,7 @@ Page 5: Clients/Contact
 <div class="caption text-center">
 
 	<div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-		<h1>Logan Hugli</h1>
-	</div>
-
-	<div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
-		<h3>Full Stack Developer</h3>
-	</div>
-			
-	<div class="os-animation" data-animation="bounceInUp" data-delay="1s">
-		<a class="btn btn-outline-light btn-lg" href="#features">Get Started</a>
+		<h1>My Projects</h1>
 	</div>
 
 </div>
@@ -105,21 +86,18 @@ Page 5: Clients/Contact
 <!--- End Home Section -->
 
 <!--- Start Portfolio Section -->
-<div id="portfolio" class="offset">
+<div id="Features" class="offset">
 
-<div class="row padding">
+<!--- Start Fixed Background IMG Light -->
+<div class="fixed-background">
+
+<div class="row light">
 <!---
 	<div class="col-12 os-animation" data-animation="fadeInUp">
-		<h3 class="heading">Portfolio</h3>
+		<h3 class="heading">Meet the Team</h3>
 		<div class="heading-underline"></div>
 	</div>
 -->
-</div> <!--- End Row -->
-
-<!--- Start Portfolio Grid -->
-<div class="container-fluid">
-<div class="row no-padding">
-	
 	<div class="col-md-12">
 		<div class="os-animation" data-animation="fadeInUp">
 		<div id="team-slider" class="owl-carousel owl-theme">
@@ -127,19 +105,59 @@ Page 5: Clients/Contact
 			<div class="card text-center">
 				<img class="card-img-top" src="img/team/team1.png" alt="">
 				<div class="card-body">
-					<h4>John Lee</h4>
-					<h5>CEO</h5>
-					<p>John is an entrepreneur with almost 20 years of experience.</p>
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-linkedin"></i></a>
+					<h4>Test</h4>
+					<p>This is a test for my Projects.</p>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
 				</div>
 			</div>
 
-</div> <!--- End Row -->
-</div> <!--- End Container -->
-<!--- End Portfolio Grid -->
+			<div class="card text-center">
+				<img class="card-img-top" src="img/team/team2.png" alt="">
+				<div class="card-body">
+					<h4>Test</h4>
+					<p>This is a test for my Projects.</p>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
+				</div>
+			</div>
+
+			<div class="card text-center">
+				<img class="card-img-top" src="img/team/team3.png" alt="">
+				<div class="card-body">
+					<h4>Test</h4>
+					<p>This is a test for my Projects.</p>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
+				</div>
+			</div>
+
+			<div class="card text-center">
+				<img class="card-img-top" src="img/team/team4.png" alt="">
+				<div class="card-body">
+					<h4>Test</h4>
+					<p>This is a test for my Projects.</p>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
+					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
+				</div>
+			</div>
+
+		</div> <!--- End Team Slider -->
+		</div> <!--- End Animation -->
+	</div> <!--- End col-md-12 -->
+
+</div> <!--- End of Row Light -->
+
+	<div class="fixed-wrap">
+		<div id="fixed-2">
+		</div>
+	</div>
+
+</div>
+<!--- End Fixed Background IMG Light -->
+
+</div>
+<!--- End Portfolio Section -->
 
 <!--- Start Contact Section -->
 <div id="contact" class="offset">
@@ -149,7 +167,7 @@ Page 5: Clients/Contact
 
 	<div class="col-md-4">
 		<img src="img/nuno.png" alt="">
-		<p>At our core is a collection of design and development solutions that represent everything your business needs to compete in the modern marketplace.</p>
+		<p>Lets build something great together.</p>
 	</div>
 
 	<div class="col-md-4">

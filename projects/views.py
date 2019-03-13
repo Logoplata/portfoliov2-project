@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 from .models import Project
 
-def projects(request):
+def allprojects(request):
 	return render(request, 'projects/projects.html')

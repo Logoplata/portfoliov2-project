@@ -17,17 +17,6 @@
 	<link rel="stylesheet" href="{% static 'css/waypoints.css' %}">
 </head>
 
-<!---
-5 Page Outline Per Original Theme Sections:
-Page 1: Home/Features
-Page 2: Portfolio
-Page 3: Pricing
-Page 4: Team/Skills
-Page 5: Clients/Contact
--links to different pages
--Scrollspy removed for active nav links
--->
-
 <body>
 
 <!--- Start Home section -->
@@ -47,7 +36,7 @@ Page 5: Clients/Contact
 				<a class="nav-link active" href="#home">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Portfolio</a>
+				<a class="nav-link" href="{% url 'allprojects' %}">Portfolio</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="https://github.com/Logoplata">Github</a>
@@ -113,8 +102,8 @@ Page 5: Clients/Contact
 	<div class="col-12">
 		<h1>Lets Work Together</h1>
 		<p class="lead">I Build Django Websites</p>
-		<a class="btn btn-secondary btn-sm" href="contact.html">Contact Me</a>
-		<a class="btn btn-turquoise btn-sm" href="portfolio.html">See My Portfolio</a>
+		<a class="btn btn-secondary btn-sm" href="#contact">Contact Me</a>
+		<a class="btn btn-turquoise btn-sm" href="{% url 'allprojects' %}">See My Portfolio</a>
 	</div>
 </div>
 </div>
@@ -127,65 +116,13 @@ Page 5: Clients/Contact
 	<div class="os-animation" data-animation="fadeInUp">
 		<h3 class="heading">About Me</h3>
 		<div class="heading-underline"></div>
-	</div>
+		<p>Hello, I’m a web developer living in Akron Ohio. I love learning about web development and computers in general, with a focus on back end programming. My weapon of choice is Python and Django, but I believe in using the correct tool for the task at hand. For front end technologies I use HTML, JavaScript, and CSS as well as Bootstrap.
 
-<div class="row">
-	
-	<div class="col-sm-6 col-md-4">
-		<div class="os-animation" data-animation="fadeInLeft">
-			<div class="feature">
-				<span class="fa-layers fa-4x">
-				</span>
-			</div>
-		</div>
+I’m extremely passionate about web development in all it’s forms and helping small businesses build and improve their online presence. Aside from web development, I enjoy spending my time exercising in the gym or practicing Brazilian Jiu Jitsu.
+<br />
+<br />
+I believe in being forever a student and look forward to learning everything I can about web development and other aspects of technology.</p>
 	</div>
-
-	<div class="col-sm-6 col-md-4">
-		<div class="os-animation" data-animation="fadeInUp">
-			<div class="feature">
-				<span class="fa-layers fa-4x">
-					<p></p>
-				</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-sm-6 col-md-4">
-		<div class="os-animation" data-animation="fadeInRight">
-			<div class="feature">
-				<span class="fa-layers fa-4x">
-				</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-sm-6 col-md-4">
-		<div class="os-animation" data-animation="fadeInLeft">
-			<div class="feature">
-				<span class="fa-layers fa-4x">
-				</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-sm-6 col-md-4">
-		<div class="os-animation" data-animation="fadeInUp">
-			<div class="feature">
-				<span class="fa-layers fa-4x">
-				</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-sm-6 col-md-4">
-		<div class="os-animation" data-animation="fadeInRight">
-			<div class="feature">
-				<span class="fa-layers fa-4x">
-				</span>
-			</div>
-		</div>
-	</div>
-				
 
 </div> <!--- End Row -->
 
@@ -193,58 +130,7 @@ Page 5: Clients/Contact
 </div>
 <!--- End Jumbotron -->
 <!--- Start Fixed Background IMG Dark -->
-<div class="fixed-background">
 
-<div class="row dark">
-
-	<div class=" col-12 os-animation" data-animation="fadeInUp">
-		<h3 class="heading">Built With Care</h3>
-		<div class="heading-underline"></div>
-	</div>
-	<div class="col-md-4">
-	<div class="os-animation" data-animation="fadeInLeft">
-		<h3>HTML 5</h3>
-		<div class="feature">
-			<span class="fa-layers fa-3x">
-				<i class="fas fa-code"></i>
-			</span>
-		</div>
-		<p class="lead">Built with the latest, HTML 5.</p>
-	</div>
-	</div>
-
-	<div class="col-md-4">
-	<div class="os-animation" data-animation="fadeInUp">
-		<h3>BOOTSTRAP 4</h3>
-		<div class="feature">
-			<span class="fa-layers fa-3x">
-				<i class="fas fa-bold"></i>
-			</span>
-		</div>
-		<p class="lead">Built with the latest, Bootstrap 4.</p>
-	</div>
-	</div>
-
-	<div class="col-md-4">
-	<div class="os-animation" data-animation="fadeInRight">
-		<h3>CSS 3</h3>
-		<div class="feature">
-			<span class="fa-layers fa-3x">
-				<i class="fab fa-css3"></i>
-			</span>
-		</div>
-		<p class="lead">Built with the latest, CSS 3.</p>
-	</div>
-	</div>
-
-</div> <!--- End of Row Dark -->
-
-	<div class="fixed-wrap">
-		<div id="fixed">
-		</div>
-	</div>
-	
-</div>
 <!--- End Fixed Background IMG Dark -->
 
 </div>
@@ -269,7 +155,7 @@ Page 5: Clients/Contact
 
 	<div class="col-md-4">
 		<img src="img/nuno.png" alt="">
-		<p>At our core is a collection of design and development solutions that represent everything your business needs to compete in the modern marketplace.</p>
+		<p>Lets build something great together.</p>
 	</div>
 
 	<div class="col-md-4">
