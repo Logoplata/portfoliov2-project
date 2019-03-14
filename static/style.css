@@ -36,7 +36,7 @@ h3.title-heading {
 /* Medium (md) devices (tablets) */
 @media (max-width: 767px) {
   #title-heading {
-    background-image: url('img/title-background-mobile.png');
+    background-image: url('#');
   }
 }
 
@@ -366,7 +366,7 @@ blockquote .svg-inline--fa {
 /*============= CONTACT SECTION =============*/
 
 footer {
-  background: url('img/footer/footer.png') no-repeat;
+  background: url('#') no-repeat;
   /*background-color: #40474e;*/
   background-size: cover;
   color: white;
@@ -481,13 +481,13 @@ a.top-scroll:hover {
     font-size: 1.8rem;
   }
   #fixed {
-    background-image: url('img/fixed/apple-mobile.png');
+    background-image: url('#');
   }
   #fixed-2 {
     background-image: url('img/fixed/office-mobile.png');
   }
   footer {
-    background: url('img/footer/footer-mobile.png') no-repeat;
+    background: url('#') no-repeat;
   }
   .clients img {
     max-width: 50%;

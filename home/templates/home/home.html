@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Logan Hugli - Web Developer</title>
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
 	<link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" href="{% static 'style.css' %}">
 	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
@@ -25,7 +25,7 @@
 <!--- Navigation -->
 <nav class="navbar navbar-expand-md fixed-top">
 <div class="container-fluid">
-	<a class="navbar-brand" href="index.html"><img src="img/nuno.png" alt=""></a>
+	<a class="navbar-brand" href="index.html"><img src="#" alt=""></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
 	</button>
@@ -42,7 +42,7 @@
 				<a class="nav-link" href="https://github.com/Logoplata">Github</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="team.html">Resume</a>
+				<a class="nav-link" href="{% static 'Resume 1.pdf' %}">Resume</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="mailto:Lhugli6386@hotmail.com">Contact Me</a>
@@ -167,10 +167,10 @@ I believe in being forever a student and look forward to learning everything I c
 
 	<div class="col-md-4">
 		<h3 class="text-center">CONNECT WITH ME</h3>
-		<a href="#"><i class="fab fa-github-alt"></i></a>
-		<a href="#"><i class="fab fa-linkedin"></i></a>
+		<a href="https://github.com/Logoplata"><i class="fab fa-github-alt"></i></a>
 		<br><br>
 		<a class="btn btn-outline-light btn-sm" href="mailto:Lhugli6386@hotmail.com">SEND ME AN EMAIL</a>
+		<a href="https://icons8.com/icon/1909/python">Python icon by Icons8</a>
 	</div>
 
 	<hr class="socket">

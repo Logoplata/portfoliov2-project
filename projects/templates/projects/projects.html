@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Logan Hugli - Web Developer</title>
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
 	<link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" href="{% static 'style.css' %}">
 	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
@@ -33,7 +33,7 @@
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="#home">Home</a>
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link active" href="#home">Portfolio</a>
@@ -42,7 +42,7 @@
 				<a class="nav-link" href="https://github.com/Logoplata">Github</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="team.html">Resume</a>
+				<a class="nav-link" href="{% static 'Resume 1.pdf' %}">Resume</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="mailto:Lhugli6386@hotmail.com">Contact Me</a>
@@ -102,46 +102,17 @@
 		<div class="os-animation" data-animation="fadeInUp">
 		<div id="team-slider" class="owl-carousel owl-theme">
 
+			{% for project in projects.all %}
 			<div class="card text-center">
-				<img class="card-img-top" src="img/team/team1.png" alt="">
+				<img class="card-img-top" src="{{ project.image.url }}" />
 				<div class="card-body">
 					<h4>Test</h4>
-					<p>This is a test for my Projects.</p>
+					<p>{{ project.summary }}</p>
 					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
 					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
 				</div>
 			</div>
-
-			<div class="card text-center">
-				<img class="card-img-top" src="img/team/team2.png" alt="">
-				<div class="card-body">
-					<h4>Test</h4>
-					<p>This is a test for my Projects.</p>
-					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
-					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
-				</div>
-			</div>
-
-			<div class="card text-center">
-				<img class="card-img-top" src="img/team/team3.png" alt="">
-				<div class="card-body">
-					<h4>Test</h4>
-					<p>This is a test for my Projects.</p>
-					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
-					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
-				</div>
-			</div>
-
-			<div class="card text-center">
-				<img class="card-img-top" src="img/team/team4.png" alt="">
-				<div class="card-body">
-					<h4>Test</h4>
-					<p>This is a test for my Projects.</p>
-					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">Project</a>
-					<a class="btn btn-outline-dark btn-sm" href="mailto:Lhugli6386@hotmail.com">GitHub</a>
-				</div>
-			</div>
-
+			{% endfor %}
 		</div> <!--- End Team Slider -->
 		</div> <!--- End Animation -->
 	</div> <!--- End col-md-12 -->
@@ -156,6 +127,7 @@
 </div>
 <!--- End Fixed Background IMG Light -->
 
+</div>
 </div>
 <!--- End Portfolio Section -->
 
@@ -179,8 +151,7 @@
 
 	<div class="col-md-4">
 		<h3 class="text-center">CONNECT WITH ME</h3>
-		<a href="#"><i class="fab fa-github-alt"></i></a>
-		<a href="#"><i class="fab fa-linkedin"></i></a>
+		<a href="https://github.com/Logoplata"><i class="fab fa-github-alt"></i></a>
 		<br><br>
 		<a class="btn btn-outline-light btn-sm" href="mailto:Lhugli6386@hotmail.com">SEND ME AN EMAIL</a>
 	</div>
